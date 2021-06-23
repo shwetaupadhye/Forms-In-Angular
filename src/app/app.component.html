@@ -1,0 +1,30 @@
+
+<div class="container">
+  <div class="row">
+    
+<div id="envelope">
+  <form action="" method="post"[formGroup]='info' (ngSubmit)="onSubmit(info.value)">
+  
+  <label>Your Name</label>
+  <input name="name" placeholder="Enter Name" type="text" width="100px;"formControlName="name">
+  <label>Email Id</label>
+  <input name="email" placeholder="Enter Email ID " type="text" formControlName="email">
+  <label for="inputPassword4">Password</label>
+          <input type="password"formControlName="password" class="form-control" id="inputEmail4">
+  <label>Contact Number</label>
+  <input name="contact" placeholder="contact" type="text" formControlName="contact">
+  <label>Address</label>
+  <input name="text" placeholder="Address" type="text"formControlName="add">
+  <label>State</label>
+  <input name="text" placeholder="Address" type="text"formControlName="add">
+  <label>City</label>
+  <input name="text" placeholder="city" type="text"formControlName="city">
+  <label>Message</label>
+  
+  <textarea cols="15" name="message" placeholder="Message" rows="10"formControlName="msg">
+  </textarea>
+  <input id="submit" type="submit" value="Send Message">
+  </form>
+  </div>
+  </div>
+  </div>
